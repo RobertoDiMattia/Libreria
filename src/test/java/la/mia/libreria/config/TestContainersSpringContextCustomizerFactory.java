@@ -48,18 +48,12 @@ public class TestContainersSpringContextCustomizerFactory implements ContextCust
                     }
                     testValues =
                         testValues.and(
-                            "spring.r2dbc.url=" +
-                            prodTestContainer.getTestContainer().getJdbcUrl().replace("jdbc", "r2dbc").replace("mysql", "mariadb") +
-                            "?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
-                        );
-                    testValues = testValues.and("spring.r2dbc.username=" + prodTestContainer.getTestContainer().getUsername());
-                    testValues = testValues.and("spring.r2dbc.password=" + prodTestContainer.getTestContainer().getPassword());
-                    testValues =
-                        testValues.and(
-                            "spring.liquibase.url=" +
+                            "spring.datasource.url=" +
                             prodTestContainer.getTestContainer().getJdbcUrl() +
                             "?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
                         );
+                    testValues = testValues.and("spring.datasource.username=" + prodTestContainer.getTestContainer().getUsername());
+                    testValues = testValues.and("spring.datasource.password=" + prodTestContainer.getTestContainer().getPassword());
                 }
             }
             testValues.applyTo(context);
