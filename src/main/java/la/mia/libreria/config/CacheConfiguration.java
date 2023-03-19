@@ -51,6 +51,7 @@ public class CacheConfiguration {
             createCache(cm, la.mia.libreria.domain.User.class.getName());
             createCache(cm, la.mia.libreria.domain.Authority.class.getName());
             createCache(cm, la.mia.libreria.domain.User.class.getName() + ".authorities");
+            createCache(cm, la.mia.libreria.domain.Libro.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

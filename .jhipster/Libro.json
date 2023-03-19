@@ -1,0 +1,36 @@
+{
+  "changelogDate": "20230311035230",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "titolo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autore",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genere",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "anno",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "prezzo",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "copertina",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Libro",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

@@ -7,6 +7,7 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entità",
+        "libro": "Libro",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -83,7 +84,7 @@
       "id": "ID"
     },
     "ribbon": {
-      "dev": "Development"
+      "dev": ""
     },
     "item-count": "Mostra {{first}} - {{second}} di {{total}} articoli."
   },
@@ -142,5 +143,5 @@
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
     }
   },
-  "footer": "Piè di pagina"
+  "footer": ""
 }

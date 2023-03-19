@@ -1,0 +1,29 @@
+{
+  "libreriaApp": {
+    "libro": {
+      "home": {
+        "title": "Libros",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Libro",
+        "createOrEditLabel": "Genera o modifica un Libro",
+        "notFound": "No Libros found"
+      },
+      "created": "&Egrave; stato generato un nuovo Libro con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Libro identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Libro con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Libro {{ id }}?"
+      },
+      "detail": {
+        "title": "Libro"
+      },
+      "id": "ID",
+      "titolo": "Titolo",
+      "autore": "Autore",
+      "genere": "Genere",
+      "anno": "Anno",
+      "prezzo": "Prezzo",
+      "copertina": "Copertina"
+    }
+  }
+}
