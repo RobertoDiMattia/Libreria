@@ -57,15 +57,9 @@ export const GetLibri = () => {
                   <strong>Prezzo:</strong> {libro.prezzo} €
                 </p>
               </div>
-              <div
-                style={{
-                  height: '500px',
-                  backgroundImage: `url(${libro.copertina})`,
-                  backgroundSize: 'contain',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                }}
-              />
+              <a href={libro.copertina}>
+                <img src={libro.copertina} alt={libro.titolo} style={{ width: '100%', height: 'auto' }} />
+              </a>
             </div>
           ))}
         </div>

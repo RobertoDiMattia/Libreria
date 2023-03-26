@@ -58,7 +58,8 @@ public class LibriService {
     }
 
     public Libro modificaLibri(Long id, Libro libri) throws NotFoundException {
-        libri.setId(libriRepository.findById(id).orElseThrow(NotFoundException::new).getId());
+        Libro libriRepositoryById = libriRepository.findById(id).orElseThrow(NotFoundException::new);
+        libri.setId(libriRepositoryById.getId());
         return libriRepository.save(libri);
     }
 }

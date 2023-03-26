@@ -59,15 +59,7 @@ export const GetFiveLibri = () => {
               <strong>Prezzo:</strong> {libro.prezzo} €
             </p>{' '}
           </div>{' '}
-          <div
-            style={{
-              height: '300px',
-              backgroundImage: `url(${libro.copertina})`,
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-            }}
-          ></div>{' '}
+          <a href={libro.copertina}></a>{' '}
         </div>
       ))}{' '}
     </div>

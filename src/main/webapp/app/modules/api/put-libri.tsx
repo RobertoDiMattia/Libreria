@@ -12,7 +12,7 @@ interface Libro {
   copertina: string;
 }
 
-let titolos;
+let titoloInserito;
 let id;
 
 export const PutLibri = () => {
@@ -35,9 +35,15 @@ export const PutLibri = () => {
     setModal(!modal);
   };
   const getTitle = async () => {
-    titolos = prompt('inserisci il titolo del libro che vuoi modificare');
-    const titolo = await axios.get(`/trovalibro?titolo=${titolos}`);
-    id = titolo.data.id;
+    titoloInserito = prompt('inserisci il titolo del libro che vuoi modificare');
+    if (titoloInserito == '') {
+      alert('devi inserire un titolo esistente');
+      window.location.reload();
+    } else if (titoloInserito == null) {
+      window.location.reload();
+    }
+    const titoloEstratto = await axios.get(`/trovalibro?titolo=${titoloInserito}`);
+    id = titoloEstratto.data.id;
   };
   const handleSalvaLibro = async () => {
     try {
